@@ -26,5 +26,31 @@
     <tbody id='table'>
     </tbody>
   </table>
+  <form id='form'>
+    <fieldset>
+      <legend>Submit or Update a Location!</legend>
+
+      <label for='newLocationName'>Location: </label>
+      <input name='newLocationName' type='text'>
+
+      <label for='newMinCustomers'>Min Customers per Hour: </label>
+      <input name='newMinCustomers' type='text'>
+
+      <label for='newMaxCustomers'>Max Customers per Hour: </label>
+      <input name='newMaxCustomers' type='text'>
+
+      <label for='newAverageDonuts'>Average Donuts per Customer: </label>
+      <input name='newAverageDonuts' type='text'>
+
+      <button id='submit-button' type='submit'>Submit/Update</button>
+
+    </fieldset>
+  </form>
+  <select type='text' name='locations' id='dropdown'>
+    <option value='blank'>Update a location!</option>
+  </select>
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js'></script>
   <script type='text/javascript' src='donut.js'></script>
+
+
 </body>
