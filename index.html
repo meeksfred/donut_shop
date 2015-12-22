@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <head>
   <title>Top Pot Donuts</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 <body>
-  <h1>Finally, a table!</h1>
-  <h3>Table Description</h3>
-    <p>This is my table with all of the Top Pot Donuts data. It took a very long time to get all the data to actually show up in the table. As you can see in my code, I had an even more confusing time trying to get the totals numbers to display. I ended up having to get my script to total the numbers down in my final for loops instead of having a method up top that worked. Will talk to TA's about this, and how to fix. But in my current rendition I do have final totals working.
-  <table>
-    <thead>
-      <th>Location</th>
-      <th>7 A.M.</th>
-      <th>8 A.M.</th>
-      <th>9 A.M.</th>
-      <th>10 A.M.</th>
-      <th>11 A.M.</th>
-      <th>12 P.M.</th>
-      <th>1 P.M.</th>
-      <th>2 P.M.</th>
-      <th>3 P.M.</th>
-      <th>4 P.M.</th>
-      <th>5 P.M.</th>
-      <th>6 P.M.</th>
-      <th>Totals</th>
-    </thead>
-    <tbody id='table'>
-    </tbody>
-  </table>
-  <form id='form'>
-    <fieldset>
-      <legend>Submit or Update a Location!</legend>
+  <header>
+    <div>Moar Donuts</div>
+    <img class='logo' src='images/logo2.jpg'>
+    <ul>
+      <li class='nav'><a href='#'>Home</a></li>
+      <li class='nav'><a href='#'>Donuts</a></li>
+  </header>
+  <section>
+    <h1>Top Pot Donuts Around Seattle</h1>
+      <p>Welcome to Max's analyis of Top Pot Donut stores from around the Seattle area! Originally opening in Seattle in 2002, Top Pot has grown into THE donut bakery in the region. If you would like to find some of their tasty treats for yourself, visit <a href='http://www.toppotdoughnuts.com/index.html'>Here!</a></p>
+      <p> Below is a table with data representing donut sales from individual neighborhood locations in the Greater Seattle area. The data is a randomly generated number of donuts sold per hour for each location, based on minimum customers per hour, maximum customers per hour, and the average number of donuts sold per customer. The daily per hour numbers are then totaled to show the final number of donuts sold each day at each location. Try changing the numbers for a location shown! Or submit your own custom location!
+    <table>
+      <thead>
+        <th>Location</th>
+        <th>7 AM</th>
+        <th>8 AM</th>
+        <th>9 AM</th>
+        <th>10 AM</th>
+        <th>11 AM</th>
+        <th>12 PM</th>
+        <th>1 PM</th>
+        <th>2 PM</th>
+        <th>3 PM</th>
+        <th>4 PM</th>
+        <th>5 PM</th>
+        <th>6 PM</th>
+        <th>Totals</th>
+      </thead>
+      <tbody class='tabled' id='table'>
+      </tbody>
+    </table>
+    <form id='form'>
+      <fieldset>
+        <legend>Submit or Update a Location!</legend>
 
-      <label for='newLocationName'>Location: </label>
-      <input name='newLocationName' type='text'>
+        <label for='newLocationName'>Location: </label>
+        <input name='newLocationName' type='text'>
 
-      <label for='newMinCustomers'>Min Customers per Hour: </label>
-      <input name='newMinCustomers' type='text'>
+        <label for='newMinCustomers'>Min Cust: </label>
+        <input name='newMinCustomers' type='text'>
 
-      <label for='newMaxCustomers'>Max Customers per Hour: </label>
-      <input name='newMaxCustomers' type='text'>
+        <label for='newMaxCustomers'>Max Cust: </label>
+        <input name='newMaxCustomers' type='text'>
 
-      <label for='newAverageDonuts'>Average Donuts per Customer: </label>
-      <input name='newAverageDonuts' type='text'>
+        <label for='newAverageDonuts'>Avg Donuts: </label>
+        <input name='newAverageDonuts' type='text'>
 
-      <button id='submit-button' type='submit'>Submit/Update</button>
+        <button id='submit-button' type='submit'>Submit/Update</button>
 
-    </fieldset>
-  </form>
-  <select type='text' name='locations' id='dropdown'>
-    <option value='blank'>Update a location!</option>
-  </select>
+      </fieldset>
+    </form>
+  </section>
   <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js'></script>
   <script type='text/javascript' src='donut.js'></script>
 
 
 </body>
+<footer>
+  <address>
+    Moar Donuts<br>
+    101 John Doe Dr.<br>
+    Seattle, WA<br>
+  </address>
+  <address>
+    Phone: (123)456-7890<br>
+    Email: <a href='mailto:Moardonuts@donuts.com'>Moardonuts@donuts.com</a><br>
+  </address>
+
+
+
+
