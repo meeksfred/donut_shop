@@ -9,6 +9,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 0;
+  position: fixed;
+  height: 75px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 h1 {
@@ -16,6 +22,7 @@ h1 {
 }
 body {
   margin: 0;
+  position: absolute;
 }
 
 table {
@@ -33,7 +40,7 @@ section {
   background-color: #FFD393;
   color: #405952;
   width: 100%;
-  margin-top: 0;
+  margin-top: 25px;
 }
 
 ul {
@@ -55,6 +62,21 @@ a:link {
 
 .nav {
   display: inline;
+  font-size: 26px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.title {
+  font-size: 26px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 p:first-letter {
@@ -62,8 +84,9 @@ p:first-letter {
 }
 
 .logo {
-  height: 150px;
-  width: 200px;
+  height: 75px;
+  width: 75px;
+  position: relative;
 }
 
 form {
@@ -81,6 +104,7 @@ footer {
   justify-content: space-between;
   background-color: #FF974F;
   color: white;
+  position: relative;
 }
 
 
